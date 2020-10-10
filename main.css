@@ -15,26 +15,29 @@ body {
 }
 .sidenav {
   height: 100%;
-  width: 150px;
+  width: 10%;
   position: fixed;
   top: 0;
   left: 0;
-  padding-left: 3.7rem;
-  padding-bottom: 20rem;
+  
+  padding-bottom: 15rem;
   background-color: rgba(255, 255, 255, 0.664);
   padding-top: 5rem;
   display: flex;
-
+  
   justify-content: space-evenly;
   flex-direction: column;
 }
 .links {
   transform: rotate(270deg);
   transform-origin: left top 0;
-  font-weight: bold;
+  
+  /* justify-content: center; */
+  /* align-items: center; */
   font-size: 18px;
   text-decoration: none;
   color: black;
+  padding-top: 40%;
 }
 .portfolio {
   text-align: end;
@@ -54,7 +57,22 @@ body {
     transform: rotate(-6deg);
     margin-left: 20%;
     margin-top: 250.5px;
+    animation: .5s ease-in 0s 1 fall;
 }
+
+@keyframes fall {
+  0% {
+    transform: translateY(1rem) rotateZ(-45deg);
+    opacity: 0;
+  }
+}
+
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
 .box1 h1 {
     padding: 0.8rem 2rem 0.2rem 2rem;
     font-weight: normal;
@@ -66,7 +84,7 @@ body {
     width: fit-content;
     transform: rotate(3deg);
     margin-left: 25%;
-    
+    animation: 1s ease-in 0s 1 fall;
 }
 .box2 h1 {
     padding: 0.9rem 2rem 0.1rem 1rem;
@@ -79,8 +97,9 @@ body {
     background: white;
     width: fit-content;
     transform: rotate(-1deg);
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 0.3rem;
+    animation: 1.5s ease-in 0s 1 fall;
 }
 .box3 h1 {
     padding: 0.9rem 2rem 0.1rem 1rem;
