@@ -13,6 +13,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
 }
+p {
+  font-size: 16px;
+}
+
+.spacing {
+  letter-spacing: .5rem;
+}
 .sidenav {
   height: 100%;
   width: 10%;
@@ -106,6 +113,20 @@ body {
     font-weight: normal;
     letter-spacing: 1rem;
     transform: rotate(-2deg);
+}
+.box4 {
+    background: white;
+    width: fit-content;
+    transform: rotate(-1deg);
+    margin-left: 37%;
+    margin-top: 0.3rem;
+    animation: 1.5s ease-in 0s 1 fall;
+}
+.box4 p {
+    padding: 0.9rem 2rem 0.1rem 1rem;
+    font-weight: normal;
+    
+    transform: rotate(-1deg);
 }
 
 @media only screen and (max-width: 500px) {
