@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 body {
   background-image: url(./images/brewhouse.jpg);
@@ -13,31 +12,44 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
 }
+p {
+  font-size: 16px;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  letter-spacing: 1rem;
+}
+
+.spacing {
+  letter-spacing: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
 .sidenav {
-  height: 100%;
-  width: 10%;
+  height: 100vh;
+  width: 150px;
   position: fixed;
-  top: 0;
-  left: 0;
-  
-  padding-bottom: 15rem;
+
   background-color: rgba(255, 255, 255, 0.664);
-  padding-top: 5rem;
-  display: flex;
-  
+
   justify-content: space-evenly;
+  display: flex;
+  /* padding-top: 3rem; */
   flex-direction: column;
+  z-index: 1;
 }
 .links {
-  transform: rotate(270deg);
-  transform-origin: left top 0;
-  
-  /* justify-content: center; */
-  /* align-items: center; */
-  font-size: 18px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  transform-origin: left top 1;
+  font-size: 24px;
   text-decoration: none;
   color: black;
-  padding-top: 40%;
 }
 .portfolio {
   text-align: end;
@@ -52,12 +64,12 @@ body {
   letter-spacing: 1rem;
 }
 .box1 {
-    background: white;
-    width: fit-content;
-    transform: rotate(-6deg);
-    margin-left: 20%;
-    margin-top: 250.5px;
-    animation: .5s ease-in 0s 1 fall;
+  background: white;
+  width: fit-content;
+  transform: rotate(-6deg);
+  margin-left: 20%;
+  margin-top: 250.5px;
+  animation: 0.2s ease-in 0s 1 fall;
 }
 
 @keyframes fall {
@@ -67,43 +79,165 @@ body {
   }
 }
 
-
 .fall {
   transform: translateY(10rem) rotateZ(20deg);
   opacity: 0;
 }
 
 .box1 h1 {
-    padding: 0.8rem 2rem 0.2rem 2rem;
-    font-weight: normal;
-    letter-spacing: 1rem;
-    font-size: 36px;
+  padding: 0.8rem 2rem 0.2rem 2rem;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  font-size: 36px;
 }
 .box2 {
-    background: white;
-    width: fit-content;
-    transform: rotate(3deg);
-    margin-left: 25%;
-    animation: 1s ease-in 0s 1 fall;
+  background: white;
+  width: fit-content;
+  transform: rotate(3deg);
+  margin-left: 25%;
+  animation: 0.3s ease-in 0s 1 fall;
 }
 .box2 h1 {
-    padding: 0.9rem 2rem 0.1rem 1rem;
-    font-weight: normal;
-    letter-spacing: 1rem;
-    font-size: 36px;
-    transform: rotate(4deg);
+  padding: 0.9rem 2rem 0.1rem 1rem;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  font-size: 36px;
+  transform: rotate(4deg);
 }
 .box3 {
-    background: white;
-    width: fit-content;
-    transform: rotate(-1deg);
-    margin-left: 10%;
-    margin-top: 0.3rem;
-    animation: 1.5s ease-in 0s 1 fall;
+  background: white;
+  width: fit-content;
+  transform: rotate(-1deg);
+  margin-left: 10%;
+  margin-top: 0.3rem;
+  animation: 0.5s ease-in 0s 1 fall;
+  text-align: center;
 }
 .box3 h1 {
-    padding: 0.9rem 2rem 0.1rem 1rem;
-    font-weight: normal;
-    letter-spacing: 1rem;
-    transform: rotate(-2deg);
+  padding: 0.9rem 2rem 0.1rem 1rem;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  transform: rotate(-1.5deg);
+}
+.boxWork {
+  background: white;
+  width: fit-content;
+  transform: rotate(-1deg);
+  margin-left: 10%;
+  margin-top: 0.3rem;
+  animation: 0.5s ease-in 0s 1 fall;
+  text-align: center;
+}
+.boxWork h1 {
+  padding: 0.9rem 2rem 0.1rem 1rem;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  transform: rotate(-1.5deg);
+}
+.boxContact {
+  background: white;
+  width: 300px;
+  transform: rotate(1deg);
+  margin-left: 30%;
+  margin-top: 0.3rem;
+  animation: 0.5s ease-in 0s 1 fall;
+  text-align: center;
+}
+.boxContact h1 {
+  padding: 0.9rem 2rem 0.1rem 1rem;
+  font-weight: normal;
+  letter-spacing: 1rem;
+  transform: rotate(-1.5deg);
+}
+.box4 {
+  background: white;
+  width: 100%;
+  transform: rotate(-1deg);
+  margin-left: 42%;
+  margin-top: -11rem;
+  animation: 0.5s ease-in 0s 1 fall;
+}
+.box4 p {
+  padding: 0.9rem 2rem 0.9rem 1rem;
+  font-weight: normal;
+
+  transform: rotate(-1deg);
+}
+
+.about {
+  display: none;
+}
+.work {
+  display: none;
+}
+.contact {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .box1 {
+    margin-top: 120px;
+
+  }
+  .box2 {
+    margin-top: 1rem;
+  }
+
+  .box4 {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 0.3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box3 {
+    
+    transform: rotate(83deg);
+    margin-left: 10%;
+    margin-top: 7rem;
+    animation: 0.5s ease-in 0s 1 fall;
+    
+  }
+  .boxWork {
+    transform: rotate(60deg);
+    margin-left: 25%;
+    margin-top: 7rem;
+    animation: 0.5s ease-in 0s 1 fall;
+  }
+  .boxWork h1 {
+    font-size: 16px;
+    letter-spacing: .1rem;
+  }
+  
+  .sidenav {
+    width: 3rem;
+    padding-bottom: 4rem;
+  }
+  .box1 {
+    margin-top: 50px;
+
+  }
+  .box2 {
+    margin-top: 1rem;
+  }
+
+  .box4 {
+    margin-top: 0.3rem;
+  }
+  .boxContact {
+    margin-left: 10%;
+  
+  }
+  .links {
+    font-size: 16px;
+  }
+  .box1 h1, .box2 h1, .box3 h1 {
+    font-size: 24px;
+  }
+  a, .portfolio a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 10px;
+  }
 }
