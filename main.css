@@ -11,6 +11,8 @@ body {
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  color: #7c1f17;
+
 }
 p {
   font-size: 16px;
@@ -28,10 +30,10 @@ button {
 }
 a {
   text-decoration: none;
-  color: red;
+  color: #7c1f17;
 }
 .sidenav {
-  height: 100vh;
+  height: 100%;
   width: 150px;
   position: fixed;
 
@@ -49,7 +51,7 @@ a {
   transform-origin: left top 1;
   font-size: 24px;
   text-decoration: none;
-  color: black;
+  color: #7c1f17;
 }
 .portfolio {
   text-align: end;
@@ -195,7 +197,7 @@ a {
     
     transform: rotate(83deg);
     margin-left: 10%;
-    margin-top: 7rem;
+    margin-top: 11rem;
     animation: 0.5s ease-in 0s 1 fall;
     
   }
