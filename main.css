@@ -45,7 +45,7 @@ a {
   flex-direction: column;
   z-index: 1;
 }
-.links {
+.links, .links button {
   cursor: pointer;
   transform: rotate(90deg);
   transform-origin: left top 1;
@@ -193,6 +193,11 @@ a {
   }
 }
 @media only screen and (max-width: 500px) {
+  .portfolio {
+   
+    padding-right: 1rem;
+    padding-top: .8rem;
+  }
   .box3 {
     
     transform: rotate(83deg);
@@ -213,7 +218,7 @@ a {
   }
   
   .sidenav {
-    width: 3rem;
+    width: 4rem;
     padding-bottom: 4rem;
   }
   .box1 {
