@@ -137,17 +137,18 @@ a {
 .boxContact {
   background: white;
   width: 300px;
-  transform: rotate(1deg);
+  transform: rotate(-1deg);
   margin-left: 30%;
   margin-top: 0.3rem;
   animation: 0.5s ease-in 0s 1 fall;
   text-align: center;
+  padding: 1rem;
 }
-.boxContact h1 {
+.boxContact img {
   padding: 0.9rem 2rem 0.1rem 1rem;
   font-weight: normal;
   letter-spacing: 1rem;
-  transform: rotate(-1.5deg);
+  transform: rotate(5deg);
 }
 .box4 {
   background: white;
