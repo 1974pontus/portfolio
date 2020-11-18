@@ -22,7 +22,7 @@ button {
   background: none;
   border: none;
   outline: none;
-  letter-spacing: 1rem;
+  letter-spacing: .7rem;
 }
 
 .spacing {
@@ -246,6 +246,6 @@ a {
     font-size: 16px;
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
