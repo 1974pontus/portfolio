@@ -12,8 +12,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
   color: #7c1f17;
-
 }
+
 p {
   font-size: 16px;
 }
@@ -22,7 +22,7 @@ button {
   background: none;
   border: none;
   outline: none;
-  letter-spacing: .7rem;
+  letter-spacing: 0.7rem;
 }
 
 .spacing {
@@ -45,7 +45,8 @@ a {
   flex-direction: column;
   z-index: 1;
 }
-.links, .links button {
+.links,
+.links button {
   cursor: pointer;
   transform: rotate(90deg);
   transform-origin: left top 1;
@@ -110,7 +111,7 @@ a {
   background: white;
   width: fit-content;
   transform: rotate(-1deg);
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 0.3rem;
   animation: 0.5s ease-in 0s 1 fall;
   text-align: center;
@@ -125,7 +126,7 @@ a {
   background: white;
   width: fit-content;
   transform: rotate(-1deg);
-  margin-left: 10%;
+  margin-left: 22%;
   margin-top: 0.3rem;
   animation: 0.5s ease-in 0s 1 fall;
   text-align: center;
@@ -154,11 +155,11 @@ a {
 }
 .box4 {
   background: white;
-  width: 100%;
+  width: 50%;
   transform: rotate(-1deg);
   margin-left: 42%;
   margin-top: -11rem;
-  animation: 0.5s ease-in 0s 1 fall;
+  /* animation: 0.5s ease-in 0s 1 fall; */
 }
 .box4 p {
   padding: 0.9rem 2rem 0.9rem 1rem;
@@ -178,52 +179,61 @@ a {
 }
 
 @media only screen and (max-width: 950px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
   .box1 {
     margin-top: 120px;
-
   }
   .box2 {
     margin-top: 1rem;
   }
+  .box3 {
+    transform: rotate(-1deg);
+    margin-left: 0;
+    margin-top: 0.3rem;
+    animation: 0.5s ease-in 0s 1 fall;
+    text-align: center;
+  }
 
   .box4 {
-    width: 80%;
-    margin-left: 20%;
+    width: 200px;
+    margin-left: 0;
     margin-top: 0.3rem;
   }
 }
 @media only screen and (max-width: 500px) {
+  .sidenav {
+    height: 100%;
+    width: 70px;
+  }
+
   .portfolio {
-   
     padding-right: 1rem;
-    padding-top: .8rem;
+    padding-top: 0.8rem;
   }
   .box3 {
-    
     transform: rotate(83deg);
-    margin-left: 10%;
+
     margin-top: 11rem;
     animation: 0.5s ease-in 0s 1 fall;
-    
   }
   .boxWork {
     transform: rotate(60deg);
-    margin-left: 25%;
+    margin-left: 0;
     margin-top: 7rem;
     animation: 0.5s ease-in 0s 1 fall;
   }
   .boxWork h1 {
     font-size: 16px;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
   }
-  
-  .sidenav {
-    width: 4rem;
-    padding-bottom: 4rem;
-  }
+
   .box1 {
     margin-top: 50px;
-
   }
   .box2 {
     margin-top: 1rem;
@@ -233,16 +243,19 @@ a {
     margin-top: 0.3rem;
   }
   .boxContact {
-    margin-left: 10%;
-  
+    margin-left: 60px;
+    width: 200px;
   }
   .links {
     font-size: 16px;
   }
-  .box1 h1, .box2 h1, .box3 h1 {
+  .box1 h1,
+  .box2 h1,
+  .box3 h1 {
     font-size: 24px;
   }
-  a, .portfolio a {
+  a,
+  .portfolio a {
     font-size: 16px;
   }
   p {
